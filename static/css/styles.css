@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,900;1,400&display=swap');
 @font-face {
-    font-family: 'Fighting Spirit'; /* Name your font */
-    src: url('../fonts/font.ttf') format('truetype'); /* Specify the path to your font file */
+    font-family: 'Fighting Spirit'; 
+    src: url('../fonts/font.ttf') format('truetype'); 
 }
-
-
 body {
     margin: 0;
     overflow: hidden;
@@ -23,104 +21,81 @@ body {
     opacity: 0.3;
     z-index: -1;
 }
-
-
 .header-text {
-    font-family: 'Fighting Spirit', sans-serif; /* Specify your gaming font */
-    font-size: 4rem; /* Adjust font size as needed */
+    font-family: 'Fighting Spirit', sans-serif; 
+    font-size: 4rem; 
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 1px 1px 1px #e26cff, 2px 2px 1px #000000, 3px 3px 1px #000000;/* Change the stroke color */
+    text-shadow: 1px 1px 1px #e26cff, 2px 2px 1px #000000, 3px 3px 1px #000000;
     animation: entryGlowAnimation 1.5s;
 }
 @keyframes entryGlowAnimation {
     0% {
-        text-shadow: 0 0 0 rgba(226, 108, 255, 0.5); /* No glow initially */
+        text-shadow: 0 0 0 rgba(226, 108, 255, 0.5);
     }
 
     50% {
-        text-shadow: 0 0 10px rgba(226, 108, 255, 0.8), 0 0 15px rgba(226, 108, 255, 0.6), 0 0 20px rgba(226, 108, 255, 0.4); /* Strong glow effect */
+        text-shadow: 0 0 10px rgba(226, 108, 255, 0.8), 0 0 15px rgba(226, 108, 255, 0.6), 0 0 20px rgba(226, 108, 255, 0.4); 
 
     }
     100% {
-        text-shadow: 0 0 0 rgba(226, 108, 255, 0.5); /* No glow initially */
+        text-shadow: 0 0 0 rgba(226, 108, 255, 0.5);
 
     }
 }
-
-
-
-/* .geometric-bg {
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.2) 10px, rgba(255,255,255,0.2) 20px);
-} */
-
 .call-to-action {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align content vertically */
-    text-align: center; /* Center text within container */
-
+    flex-direction: column; 
+    text-align: center; 
 }
-
 .cta-container {
-    text-align: center; /* Center text within container */
+    text-align: center; 
 }
-
 .btn-container {
-    display: flex; /* Make the container a flexbox */
-    justify-content: center; /* Center buttons horizontally within the container */
+    display: flex; 
+    justify-content: center;
   }
-
 .btn {
-    margin: 10px; /* Add margin around buttons */
-    padding: 10px 20px; /* Adjust padding for button size */
-    border-radius: 5px; /* Rounded corners for buttons */
+    margin: 10px; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
     font-size: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
     scale: 0.9;
-    min-width: 20px; /* Minimum width for the buttons */
-    display: inline-flex; /* Make the button behave as inline-flex */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    min-width: 20px; 
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
 }
-
-
-
 .btn-social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .btn-discord {
-    background-color: #7289DA; /* Blurple */
+    background-color: #7289DA; 
     border-color: #7289DA;
     color: white;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 1);
-
 }
-
 .btn-discord:hover {
     background-color: #5b6eae;
     border-color: #5b6eae;
 }
-
 .btn-twitter {
-    background-color: #0091ff; /* Black */
+    background-color: #0091ff; 
     border-color: #000000;
     color: white;
     box-shadow: 0 2px 2px rgb(0, 0, 0);
-
 }
-
 .btn-twitter:hover {
     background-color: #333333;
     border-color: #333333;
 }
-
 .btn-social .btn-text {
     display: none;
 }
@@ -129,9 +104,8 @@ body {
 }
 .btn-social:hover .btn-text {
     display: inline-block;
-    margin-left: 5px; /* Add margin between logo and text */
+    margin-left: 5px; 
 }
-
 .btn-info {
     background-color: #ff7300;
     border: none;
@@ -145,16 +119,13 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .btn-info:hover {
     background-color: #0056b3;
 }
-
 .logo{
     width: 250px; 
     height: 250px;
 }
-
 #message-box {
     display: block;
     background-color: #a953be;
@@ -163,16 +134,13 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-    height: 10px; /* Set a fixed height for the message box */
-    box-sizing: border-box; /* Include padding and border in the total height */
+    height: 10px; 
+    box-sizing: border-box; 
     align-content: center;
     color: rgb(255, 255, 255);
-    font-family: 'Orbitron', sans-serif; /* Specify your gaming font */
+    font-family: 'Orbitron', sans-serif; 
     position: relative;
-
 }
-
-/* Description box styles */
 .description-box {
     display: none;
     position: fixed;
@@ -186,7 +154,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 .carousel {
     display: none;
     position: fixed;
@@ -199,31 +166,24 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 250px; /* Fixed height for the carousel */
-    max-height: 80vh; /* Maximum height for the carousel (80% of viewport height) */
+    height: 250px;
+    max-height: 80vh; 
     width: 450px;
-
     align-content: center;
 }
-
-
 .carousel-slide {
     display: none;
 }
-
 .carousel-slide:first-child {
     display: block;
 }
-
 .carousel-slide img {
     max-width: 100%;
     height: auto;
 }
 .carousel-slide:hover .carousel-image {
-    transform: scale(2); /* Scale the image to 2x on hover */
+    transform: scale(2);
 }
-
-
 .close {
     position: absolute;
     top: 5px;
@@ -233,7 +193,6 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
 .close:hover{
     color: black;
     scale: 1.5;
@@ -246,26 +205,22 @@ body {
     background-color: #000000;
     color: #ffffff;
     cursor: pointer;
-    border-radius: 50%; /* Circular visual style */
-    padding: 10px; /* Adjust padding as needed */
+    border-radius: 50%;
+    padding: 10px;
 }
 .prev {
     left: -10px;
 }
-
 .next {
     right: -10px;
 }
-
 .prev:hover, .next:hover{
     background-color:rgb(224, 143, 244);
     scale: 1.1;
 }
-
 .about{
     text-decoration: underline;
 }
-
 .glowing-dot {
     position: absolute;
     top: 50%;
@@ -277,16 +232,15 @@ body {
     box-shadow: 0 0 10px #fff;
     animation: moveDot 2s linear infinite;
   }
-
 #typing-text.completed {
-    animation: glowAnimation 1s infinite alternate; /* Apply the glow animation */
+    animation: glowAnimation 1s infinite alternate; 
 }
 
 @keyframes glowAnimation {
     0% {
-        text-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Initial glow effect (purple) */
+        text-shadow: 0 0 10px rgba(255, 0, 255, 0.5); 
     }
     100% {
-        text-shadow: 0 0 20px rgba(255, 0, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.4); /* Stronger glow effect */
+        text-shadow: 0 0 20px rgba(255, 0, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.4); 
     }
 }
