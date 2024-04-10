@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnalyZer</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evSX huddled7su3Wr/jp5kVKdW1jPwz7qqV46uLSHAWHzjqU10TI4/sK1pQpXazU7IwAUXvKUdjMYzVcCTzxjOYIfRW7BPhzQvStD+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="geometric-bg">
+    <div id="particles-js"></div>
+    <main class="container">
+        <section class="call-to-action d-flex justify-content-center align-items-center py-5">
+            <div class="cta-container">
+                <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="AnalyZer" >
+                <h1 class="header-text">AnalyZer</h1>
+                <div id="message-box">
+                    <p id="typing-text"></p>
+                </div>
+                <div class="btn-container">
+                    <a href="https://discord.gg/your-discord-server" class="btn btn-social btn-discord">
+                        <i class="fab fa-discord"></i>
+                        <span class="btn-text">Join us on Discord</span>
+                    </a>
+                    <a href="https://twitter.com/your-twitter-handle" class="btn btn-social btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="btn-text">Follow us on Twitter</span>
+                    </a>
+
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-info" onclick="showCarousel()">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+            
+            <div id="carousel" class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+
+                <div class="carousel-slide">
+                    <img src="../static/images/about.png" alt="About">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../static/images/home_page.png" alt="Sample Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../static//images/cards_page.png" alt="Sample Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../static/images/decks_page.png" alt="Sample Image 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../static/images/duels_page.png" alt="Sample Image 4">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../static/images/logs_page.png" alt="Sample Image 5">
+                </div>
+                <span class="close" onclick="hideCarousel()">&times;</span>
+            </div>
+            
+        </section>
+    </main>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
